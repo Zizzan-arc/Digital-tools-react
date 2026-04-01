@@ -43,7 +43,7 @@ const ProductCard = ({ product, carts, setCarts }) => {
       <div className="flex items-center gap-3">
         <img src={icon} alt={name} className="h-10 w-10 object-contain rounded-lg" />
         <div>
-          <h3 className="text-base font-bold text-gray-900">{name}</h3>
+          <h3 className=" font-bold text-gray-900">{name}</h3>
         </div>
       </div>
 

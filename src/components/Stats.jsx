@@ -1,4 +1,5 @@
 const Stats = () => {
+    // creating an object and then accessing it using map function to display the stats in the UI
   const stats = [
     { value: "50K+", label: "Active Users" },
     { value: "200+", label: "Premium Tools" },

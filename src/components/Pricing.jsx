@@ -1,3 +1,4 @@
+// creating array of objects and then accessing 
 const plans = [
   {
     name: "Starter",
