@@ -1,5 +1,6 @@
 
-
+import banner from "./Banner.png";
+import playIcon from "./Play.png";
 const Banner = () => {
   return (
     <div className="bg-white py-16 px-6">
@@ -25,7 +26,7 @@ const Banner = () => {
               Explore Products
             </button>
             <button className="btn btn-outline border-gray-300 text-gray-700 hover:bg-gray-50 rounded-full px-6 font-semibold text-sm flex items-center gap-2">
-              <span><img src="./Play.png" alt="play" className="w-4 h-4" /></span> Watch Demo
+              <span><img src={playIcon} alt="play" className="w-4 h-4" /></span> Watch Demo
             </button>
           </div>
         </div>
@@ -33,7 +34,7 @@ const Banner = () => {
         {/* Right Image */}
         <div className="flex justify-center lg:justify-end">
           <img
-            src="./banner.png"
+            src={banner}
             alt="Digital Workflow"
             className="w-full max-w-md object-contain"
           />

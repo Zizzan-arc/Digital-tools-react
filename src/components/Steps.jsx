@@ -1,21 +1,24 @@
+import rocket from "./rocket.png";
+import user from "./user.png";
+import packageIcon from "./package.png";
 const steps = [
   {
     number: "1",
     title: "Create Account",
     description: "Sign up for free in seconds. No credit card required to get started.",
-    icon: "👤",
+    icon: rocket
   },
   {
     number: "2",
     title: "Choose Products",
     description: "Browse our catalog and select the tools that fit your needs.",
-    icon: "📦",
+    icon: user,
   },
   {
     number: "3",
     title: "Start Creating",
     description: "Download and start using your premium tools immediately.",
-    icon: "🚀",
+    icon: packageIcon,
   },
 ];
 
@@ -36,8 +39,8 @@ const Steps = () => {
               
 
               {/* Icon circle */}
-              <div className="relative z-10 w-20 h-20 rounded-full bg-violet-100 flex items-center justify-center text-3xl mb-5 shadow-sm">
-                {step.icon}
+              <div className="relative z-10 w-20 h-20 rounded-full bg-violet-100 flex items-center justify-center text-3xl mb-5 shadow-sm"><img src={step.icon} alt={step.title} className="w-10 h-10" />
+                
                 <span className="absolute -top-1 -right-1 w-6 h-6 rounded-full bg-violet-600 text-white text-xs font-bold flex items-center justify-center">
                   {index + 1}
                 </span>
