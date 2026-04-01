@@ -1,18 +1,18 @@
 const steps = [
   {
-    number: "01",
+    number: "1",
     title: "Create Account",
     description: "Sign up for free in seconds. No credit card required to get started.",
     icon: "👤",
   },
   {
-    number: "02",
+    number: "2",
     title: "Choose Products",
     description: "Browse our catalog and select the tools that fit your needs.",
     icon: "📦",
   },
   {
-    number: "03",
+    number: "3",
     title: "Start Creating",
     description: "Download and start using your premium tools immediately.",
     icon: "🚀",
@@ -30,13 +30,10 @@ const Steps = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
           {steps.map((step, index) => (
-            <div key={index} className="flex flex-col items-center text-center relative">
-              {/* Connector line between steps */}
-              {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-10 left-[calc(50%+3rem)] w-full h-0.5 bg-violet-200 z-0" />
-              )}
+            <div key={index} className="flex flex-col items-center text-center relative shadow-md rounded-lg bg-white p-8">
+              
 
               {/* Icon circle */}
               <div className="relative z-10 w-20 h-20 rounded-full bg-violet-100 flex items-center justify-center text-3xl mb-5 shadow-sm">
