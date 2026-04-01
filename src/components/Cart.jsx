@@ -1,4 +1,5 @@
 import { toast } from "react-toastify";
+import scart from "./shopping-cart.png";
 
 const Cart = ({ carts, setCarts }) => {
   const totalPrice = carts.reduce((sum, item) => sum + item.price, 0);
@@ -16,9 +17,9 @@ const Cart = ({ carts, setCarts }) => {
   if (carts.length === 0) {
     return (
       <div className="text-center py-20 text-gray-400">
-        <div className="text-5xl mb-4">🛒</div>
+        <img src={scart} alt="Empty Cart" className="mx-auto w-10 h-10" />
         <p className="text-lg font-medium">Your cart is empty.</p>
-        <p className="text-sm mt-1">Browse products and add items to get started.</p>
+        
       </div>
     );
   }
