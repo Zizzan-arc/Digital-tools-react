@@ -1,3 +1,5 @@
+
+
 const Banner = () => {
   return (
     <div className="bg-white py-16 px-6">
@@ -6,10 +8,10 @@ const Banner = () => {
         <div className="space-y-5">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-violet-100 border border-violet-300 text-violet-700 text-xs font-semibold px-4 py-1.5 rounded-full">
-             New: AI-Powered Tools Available
+            New: AI-Powered Tools Available
           </div>
 
-          <h1 className="text-4xl lg:text-5xl font-extrabold  text-gray-900">
+          <h1 className="text-4xl lg:text-5xl font-extrabold text-gray-900">
             Supercharge Your <br /> Digital Workflow
           </h1>
 
@@ -23,9 +25,18 @@ const Banner = () => {
               Explore Products
             </button>
             <button className="btn btn-outline border-gray-300 text-gray-700 hover:bg-gray-50 rounded-full px-6 font-semibold text-sm flex items-center gap-2">
-              <span className="text-red-600"><img src="./Play.png" alt="" /></span> Watch Demo
+              <span><img src="./Play.png" alt="play" className="w-4 h-4" /></span> Watch Demo
             </button>
           </div>
+        </div>
+
+        {/* Right Image */}
+        <div className="flex justify-center lg:justify-end">
+          <img
+            src="./banner.png"
+            alt="Digital Workflow"
+            className="w-full max-w-md object-contain"
+          />
         </div>
       </div>
     </div>
